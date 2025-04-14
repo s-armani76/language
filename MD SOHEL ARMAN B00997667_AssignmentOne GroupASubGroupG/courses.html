@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses | LanguageLearn</title>
+  <meta name="description" content="Browse our comprehensive language courses" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link rel="icon" href="Images/language-learning.png" type="image/svg+xml" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="Images/language-learning.png" alt="LanguageLearn Logo" width="40" />
+        <span>LanguageLearn</span>
+      </a>
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html" class="active">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#" class="btn btn-outline">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="courses-hero">
+      <div class="container">
+        <h1>Our Language Courses</h1>
+        <p>Choose from our carefully designed curriculum for all proficiency levels.</p>
+      </div>
+    </section>
+
+    <section class="course-filter">
+      <div class="container">
+        <div class="filter-controls">
+          <div class="search-box">
+            <input type="text" placeholder="Search courses..." id="course-search" />
+            <button type="button"><i class="fas fa-search"></i></button>
+          </div>
+          <select id="language-filter">
+            <option value="all">All Languages</option>
+            <option value="english">English</option>
+            <option value="spanish">Spanish</option>
+            <option value="french">French</option>
+            <option value="german">German</option>
+          </select>
+          <select id="level-filter">
+            <option value="all">All Levels</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="course-list">
+      <div class="container">
+        <div class="courses-grid" id="courses-container">
+          <!-- Will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready to start your language journey?</h2>
+        <p>Join thousands of learners who have achieved fluency with our method.</p>
+        <a href="#" class="btn btn-primary">Get Started Today</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <!-- Same footer as index.html -->
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
